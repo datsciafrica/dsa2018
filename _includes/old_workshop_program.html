@@ -1,0 +1,378 @@
+<p>
+  <table class="programme-table" border="1" cellpadding="0" cellspacing="0">
+	  {% for post in site.posts reversed %}
+	  {% if post.layout == "workshop" %}
+	  <tr>
+	    <td>
+	      <p>
+		<strong>{{ post.title }}: {{ post.date | date: '%B %d, %y' }}</strong>
+	      </p>
+	    </td>
+	  </tr>
+	  {% if post.talks %}
+	  {% for talk in post.talks %}
+	  <tr>
+	      {% if talk.start %}
+		{{ talk.title }}</br>
+	      {% else %}
+	      <td width="424">
+		<p>
+		  <strong>{{ talk.title }}</strong>
+		</p>
+	  
+	  <tr>
+	    <td
+	  <table>
+	      <thead>
+		<tr>
+		  <th><h4 class="text-center">Date</h4></th>
+		  <th><h4 class="text-center">Time</h4></th>
+		  <th><h4 class="text-center">Activity</h4></th>
+		  <th><h4 class="text-center">Speaker</h4></th>
+		</tr>
+	      </thead>
+	      <tbody>
+		{% for talk in post.talks %}
+		{% include listtalk.html %}
+		{% endfor %}
+	      </tbody>	      
+            </table>
+	    {% endif %}
+          </div>
+    <tr>
+      <td>
+        <p>
+          <strong>Day 1: June 30, 2016 </strong>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Workshop opening</strong>
+        </p>
+        <p>
+          Remarks by UN Resident Country Coordinator Ms. Rosa Malango
+        </p>
+        <p>
+          Remarks by Guest of Honour (to be confirmed)
+        </p>
+      </td>
+      <td>
+        <p>
+          09:00 – 09:30
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Introduction Presentation</strong>
+        </p>
+        <p>
+          Pulse Lab Kampala data science team on current projects
+        </p>
+      </td>
+      <td>
+        <p>
+          09:30 – 10:00
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p align="center">
+          Break
+        </p>
+      </td>
+      <td>
+        <p>
+          10:00 – 10:20
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Keynote: </strong>
+          Current data science work at IBM Research Africa, including Cognitive Companions in Healthcare and Education.<strong> </strong>
+        </p>
+        <p>
+          <em>Oliver Bent and Simone Fobi – IBM Research Africa</em>
+        </p>
+      </td>
+      <td>
+        <p>
+          10:20 – 11:00
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Data Science for Agriculture (session 1)</strong>
+        </p>
+        <p>
+          <em>Evan Girvetz - International Center for Tropical Agriculture (CIAT)</em><br>
+          <em>Ernest Mwebaze - Makerere University/Pulse Lab Kampala</em><br>
+          <em>Evans Cheruiyot - Nelson Mandela African Institute of Science and Technology </em>
+        </p>
+      </td>
+      <td>
+        <p>
+          11:00 – 12:00
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p align="center">
+          Refreshments
+        </p>
+      </td>
+      <td>
+        <p>
+          12:00 – 13:00
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Data Science for Agriculture (session 2)</strong>
+        </p>
+        <p>
+          <em>Richard Ssekibuule - Kudu</em><br>
+          <em>Andrew Kiggundu - National Agricultural Research Organisation (NARO), Uganda</em><br>
+          <em>Other speakers to be confirmed</em>
+        </p>
+      </td>
+      <td>
+        <p>
+          13:00 – 14:30
+        </p>
+      </td>
+    </tr>
+    
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Data Collection and Curation</strong>
+        </p>
+        <p>
+          <em>Prestone Adie – Kenya Open Data Initiative</em><br>
+          <em>Jamie Arkin - Human Network International</em><br>
+        </p>
+	
+      </td>
+      <td>
+        <p>
+          14:30 – 15:00
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p align="center">
+          Break
+        </p>
+      </td>
+      <td>
+        <p>
+          15:00 – 15:30
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Data Science for Sustainable Cities</strong>
+        </p>
+        <p>
+          <em>Bernard Wright - Geo Gecko</em><br>
+          <em>Joseph Kaizi - Thin Void</em><br>
+          <em>Daniel Emaasit - University of Nevada Las Vegas</em><br>
+        </p>
+      </td>
+      <td>
+        <p>
+          15:30 – 17:00
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p>
+          <strong>Keynote: </strong>
+          Extremely Supervised Learning
+        </p>
+        <p>
+          <em>Moustapha Cisse - Facebook </em>
+          <strong></strong>
+        </p>
+      </td>
+      <td>
+        <p>
+          17:00 – 17:30
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td width="424">
+        <p align="center">
+          Networking
+        </p>
+      </td>
+      <td>
+        <p>
+          17:30 – 18:00
+        </p>
+      </td>
+    </tr>
+</tbody>
+</table>
+</p>
+
+<p style="margin-top: 20px">
+  <table class="programme-table" border="1" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td valign="top" width="424">
+          <p>
+            <strong>Day 2: July 1, 2016</strong>
+          </p>
+        </td>
+        <td valign="top">
+          <p align="center">
+            <strong> </strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p>
+            <strong>Keynote: </strong>
+            The Kenya Bioacoustics Project
+          </p>
+          <p>
+            <em>Ciira wa Maina – Dedan Kimathi University of Technology, Nyeri, Kenya</em>
+          </p>
+        </td>
+        <td valign="top">
+          <p>
+            09:00 – 09:30
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p>
+            <strong>Keynote</strong>
+            : New Directions in Data Science
+          </p>
+          <p>
+            <em>Neil Lawrence </em>
+            <em>– University of Sheffield</em>
+            <em></em>
+          </p>
+        </td>
+        <td valign="top">
+          <p>
+            09:30 – 10:00
+          </p>
+        </td>
+        </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p align="center">
+            Break
+          </p>
+        </td>
+        <td valign="top">
+          <p>
+            10:00 – 10:30
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p>
+            <strong>Data Science for Health</strong>
+          </p>
+          <p>
+            <em>Ricardo Andrade - University of California San Francisco</em><br>
+            <em>Kerry Holden – Queen Mary University of London</em><br>
+            <em>Rose Nakasi – Makerere University</em><br>
+            <em>Martin Mubangizi - Pulse Lab Kampala</em><br>
+            <em>Other speakers to be confirmed</em>
+          </p>
+	  
+        </td>
+        <td valign="top">
+          <p>
+            10:30 – 12:00
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p align="center">
+            Refreshments
+          </p>
+        </td>
+        <td valign="top">
+          <p>
+            12:00 – 13:00
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p>
+            <strong>Data Science for Poverty Alleviation and the Environment</strong>
+          </p>
+          <p>
+            <em>Anthony Gidudu - Geomatics and Land Management, Makerere University</em>
+            <em>Other speakers to be confirmed</em>
+          </p>
+	  
+        </td>
+        <td valign="top">
+          <p>
+            13:00 – 14:00
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p>
+            <strong>Data Science Training and Mentorship in Africa</strong>
+          </p>
+          <p>
+            <em>Paula Hidalgo Sanchis - Pulse Lab Kampala</em><br>
+            <em>Eric Williams - Omada Health</em><br>
+            <em>Engineer Bainomugisha - Makerere University</em><br>
+          </p>
+	  
+        </td>
+        <td valign="top">
+          <p>
+            14:00 – 15:30
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" width="424">
+          <p align="center">
+            Networking
+          </p>
+        </td>
+        <td valign="top">
+          <p>
+            15:30 – 16:30
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>

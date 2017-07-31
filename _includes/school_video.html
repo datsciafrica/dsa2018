@@ -1,0 +1,34 @@
+<div id="summer_school" class="about"  style="
+									       /*background-color: #3dadb2; */
+									       background-color: #FFF; 
+									       color: rgb(51, 51, 51);
+									       text-align: center;">
+  <div class="col-sm-12" style="text-align: left;">
+    <div style="font-size: 2.5em; 
+                /*color: #e6e6e6; */
+                line-height: 1em;">Summer School</div>
+    </div>
+{% for post in site.posts reversed %}
+{% if post.layout == "school" %}
+{% if post.video %}
+  <div class="container-fluid">
+    
+    <div class="row">
+      <div class="col-sm-12" style="text-align: left;">
+        <div style="font-size: 2em; 
+                    /*color: #e6e6e6; */
+                    line-height: 1em;"> Video from {{ post.title }}
+	</div><p align='justify'>
+	  {% if post.talks %}
+	  {% for talk in post.talks %}
+	  {% include listvideo.html %}
+	  {% endfor %}
+	  {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>

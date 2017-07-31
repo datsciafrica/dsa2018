@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% include bootstrap_js_code.html %}
+
+{% capture banner_title %}{{ site.title }} {{ site.year }} Accommodation{% endcapture %}
+{% if site.banner_video %}
+{% capture banner %}{{ site.baseurl }}/img/{{ site.banner_video }}{% endcapture %}
+{% else %}
+{% capture banner %}{{ site.baseurl }}/img/{{ site.banner }}{% endcapture %}
+{% capture notice %}{% endcapture %}
+{% endif %}
+{% include banner.html %}
+
+<div id="events" class="events about" style="
+					     background-color: #efefef;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+	{{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include accommodation.html %}
+{% include sponsors.html %}

@@ -1,0 +1,117 @@
+# Site settings
+title: Data Science Africa
+location: Nyeri, Kenya
+year: 2018
+email: info@datascienceafrica.org
+banner: 
+description: > # this means to ignore newlines until "baseurl:"
+  The 2018 Data Science Africa summer school held at Dedan Kemathi
+  University of Technology.
+baseurl: "/dsa2018" # the subpath of your site, e.g. /blog/
+url: "http://www.datascienceafrica.org" # the base hostname & protocol for your site
+twitter_username: datsciAfrica
+logo_url: img/logo.png
+github_username:  datsciafrica
+
+previous:
+  url: /dsa2017/
+  text: | # From here to "school:"
+    <div class="" style="
+                        font-weight: bold; 
+                        font-size: 18px;
+
+                        ">Previous: Data Science Africa 2017</div>
+    <div>July 17<sup>th</sup>  - July 21<sup>st</sup> 2017</div>
+    <div>Arusha, Tanzania</div>
+
+
+social:
+  title: Social Event
+  text:
+  
+school:  
+  name: Data Science in Africa School
+  shortname: DSA2018
+  location: "Nelson Mandela African Institute of Science and Technology, Tanzania"
+  googleformid: 
+  dates:		
+  - 2018-06-04
+  - 2018-06-05
+  - 2018-06-06
+  registration:
+    deadline: 2018-05-11
+    open: False
+  draft: Y # set to Y if the programme is draft only.
+  roles:
+  - {type: Organizer, name: Ernest Mwebaze, url: "http://air.ug/~emwebaze"}
+  - {type: Organizer, name: Mubangizi Martin Gordon, url: "http://air.ug/~mmubangizi"}
+  - {type: Organizer, name: John Quinn, url: "http://air.ug/~jquinn"}
+
+conference:
+  shortname: DSA2018
+  theme: 
+  hosts:
+  roles:
+  - {type: General Chair, name: Ciira Maina, url: "https://sites.google.com/site/cwamainadekut/", email: "ciira.maina@dkut.ac.ke"}
+  - {type: General Chair, name: Ernest Mwebaze, url: "http://air.ug/~emwebaze",email: ""}
+  name: Data Science in Africa Workshop 
+  location: Dedan Kemathi University of Technology, Nyeri, Kenya
+  googleformid: 
+  year: 2018
+  month: June
+  registration:
+    deadline: 2018-05-11
+    open: False
+  # add other days here for them to appear
+    abstract: 
+  dates:	
+  - 2018-06-07
+  - 2018-07-08
+  draft: Y # set to Y if the programme is draft only.
+  organizers:
+  - {logo: AI.png, name: "AI Research, Makerere University"}
+  - {logo: sheffield.png, name: University of Sheffield}
+  - {logo: makerere.png, name: Makerere University}
+  - {logo: plklogo.png, name: Pulse Lab Kampala}
+  - {logo: un_uganda1.png, name: United Nations Uganda}
+  - {logo: dedan_kimathi.png, name: Dedan Kimathi University of Technology}
+  - {logo: nmaist-logo.png, name: Nelson Mandela African Institute of Science and Technology}
+  goldsponsors: 
+  #- {logo: facebook.png, name: "Facebook"}  
+  #- {logo: google.png, name: "Google"}
+  - {logo: ARM-RGB-2015.png, name: "ARM", url: "https://www.arm.com/"}
+  - {logo: ARMmbedLogo2-1170x316.png, name: "ARM mbed", url: "https://www.mbed.com/en/"}
+  silversponsors:
+  - {logo: twas.png, name: "The World Academy of Sciences (TWAS)", url: "http://twas.org/"}
+  
+feedback: 
+
+
+
+
+exclude: [
+    package.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+sass:
+    sass_dir: _scss
+
+# Build settings
+markdown: kramdown
+
+
+analytics:
+  google:
+    tracking_id: UA-80484960-1
+
+video:
+  height: 315
+  width: 560
+
+future: true

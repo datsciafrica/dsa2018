@@ -1,0 +1,44 @@
+<div class="header vert">
+    <div class="container">
+
+      <div style="font-size: 1.5em; color: #333; line-height: 1em;">{% if site.conference.draft %}Draft {% endif %}Schedule</div>
+    <p></p>
+      
+        <ul class="nav nav-tabs">
+	  {% for post in site.posts reversed %}
+	  {% if post.layout == "workshop" %}
+	  {% if post.active %}<li class="active">{% else %}<li>{% endif %}<a data-toggle="tab" href="#Workshop{{ post.title | split: ' ' | join: '' }}">{{ post.title }}</a></li>{% endif %}
+	  {% endfor %}
+        </ul>
+
+        <div class="tab-content">
+	  {% for post in site.posts reversed %}
+	  {% if post.layout == "workshop" %}
+	  <div id="Workshop{{ post.title | split: ' ' | join: '' }}" class="tab-pane fade{% if post.active %} in active{% endif %}">
+	    <p></p>
+            {{ post.content }}
+
+	    {% if post.talks %}
+	    <table>
+	      <thead>
+		<tr>
+		  <th><h4 class="text-center">Time</h4></th>
+		  <th><h4 class="text-center">Presentation</h4></th>
+		  <th></th>
+		</tr>
+	      </thead>
+	      <tbody>
+		{% for talk in post.talks %}
+		{% include listtalk.html %}
+		{% endfor %}
+	      </tbody>	      
+            </table>
+	    {% endif %}
+          </div>
+	  {% endif %}
+	  {% endfor %}
+        </div>
+    </div>
+</div>
+
+

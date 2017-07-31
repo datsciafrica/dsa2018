@@ -1,0 +1,47 @@
+<div id="summer_school" class="about" style="
+					     /*background-color: #3dadb2; */
+					     background-color: #FFF; 
+					     color: rgb(51, 51, 51);
+					     text-align: center;">
+  <div class="container-fluid">
+    <!-- <h1 class="section-title" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color:">Summer School</h1> -->
+    
+    <div class="row">
+      <div class="col-sm-12" style="text-align: left;">
+        <div style="font-size: 2.5em; 
+                    /*color: #e6e6e6; */
+                    line-height: 1em;">Summer School on Machine Learning and Data Science</div>
+        <div style="font-size: 1.5em; 
+                    /*color: #e6e6e6*/">Dates:  {{ site.school.dates.first | date: "%d" }} {{ site.school.dates.first | date: "%B" }} - {{ site.school.dates.last | date: "%d" }} {{ site.school.dates.first | date: "%B" }} {{ site.school.dates.last | date: "%Y" }}</div>
+        <div style="font-size: 1.5em; 
+                    /*color: #e6e6e6*/
+                    ">Venue: {{ site.school.location }}</div>
+        <div>&nbsp;</div>
+        <p align='justify'>
+	  
+	  In the tradition of previous Africa Data Science workshops, a summer school on machine learning and data science will be held prior to the main workshop. This summer school will target graduate students, researchers and professionals working with huge amounts of data or unique datasets. </p>
+
+	<p align='justify'>The summer school will focus on introductory and advanced lectures in data science and machine learning as well as moderate to advanced practical and tutorial sessions where participants will get their hands wet wrangling and munging datasets and applying cutting edge machine learning techniques to derive inference from the data. Lectures will be given by distinguished world renown researchers and practitioners including researchers from Sheffield University, Amazon, Swansea University Medical School, Facebook, Pulse Lab Kampala, the AI and Data Science (AIR) lab-Makerere University, ARM and Dedan Kimathi University of Technology (DeKUT).</p>
+
+	<p align='justify'>The school will also involve end-to-end tutorial sessions from professionals walking the participants through a real data analytics problem from data acquisition to data presentation. To benefit from this course participants are encouraged to have some background in programming particularly programming with Python. </p>
+
+	<h4 style="margin-top: 20px">School programme outline:</h4>
+	
+	{% include school_program.html %}
+
+
+	{% if site.school.registration.open %}
+	{% if site.school.googleformid %}
+        <a class="btn btn-default btn-lg" data-toggle="modal" href="http://goo.gl/forms/{{ site.school.googleformid }}" style="float:center; 
+													   /*background-color:white; 
+													   color:#999; */
+													   /*border-color:#e6e6e6*/
+													   ">Register for summer school</a>
+	{% endif %}	
+        {% else %}
+	<p><i>The summer school is now fully subscribed, and registration has closed.</i></p>
+	{% endif %}	
+      </div>
+    </div>
+  </div>
+</div>

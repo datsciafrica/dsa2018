@@ -1,0 +1,53 @@
+<div id="sponsors" class="about" style="background-color: #fff; text-align: center; ">
+  <div class="container-fluid">
+    <!-- <h1 class="section-title" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#3dadb2">Workshop</h1> -->
+    
+    <h2 class="section-title" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">Collaborators
+      <svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg>
+    </h2>
+    <!-- <LEGEND style="text-align: center">Organizers</LEGEND> -->
+    <div class="row">
+      {% for organizer in site.conference.organizers %}
+      
+      <div class="col-sm-6 col-md-3">
+        <div class="icon-box" style="position: relative; min-height: 80px;">
+          <!-- <span class="helper"></span> -->
+          <img class="v-align" style="" src="{{ site.baseurl }}/img/{{ organizer.logo }}">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  <h2 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">Sponsorship</h2>
+  <h3 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">Gold Sponsors</h3>
+    <div class="row">
+      {% for sponsor in site.conference.goldsponsors %}
+      
+      <div class="col-sm-6 col-md-3">
+        <div class="icon-box" style="position: relative; min-height: 80px;">
+          <!-- <span class="helper"></span> -->
+          <a href="{{sponsor.url}}">		
+          <img class="v-align" style="" src="{{ site.baseurl }}/img/{{ sponsor.logo }}">
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <h3 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">Silver Sponsors</h3>
+    <div class="row">
+      {% for sponsor in site.conference.silversponsors %}
+      
+      <div class="col-sm-6 col-md-3">
+        <div class="icon-box" style="position: relative; min-height: 80px;">
+          <!-- <span class="helper"></span> -->
+          <a href="{{sponsor.url}}">		
+          <img class="v-align" style="" src="{{ site.baseurl }}/img/{{ sponsor.logo }}">
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p>Sponsoring {{ site.title }} {{ site.year }} Event is a great way to communicate your commitment to support the achievement of the sustainable development goals. To become a sponsor, please contact Data Science Africa at <a href="mailto:{{ site.email }}">{{ site.email }}</a></p> <!--datasciafrica@gmail.com-->
+
+    
+  </div>
+</div>

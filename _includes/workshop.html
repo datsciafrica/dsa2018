@@ -1,0 +1,79 @@
+<div id="workshop" class="about" style="background-color: #efefef; text-align: center;">
+  <div class="container-fluid">
+    <!-- <h1 class="section-title" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color:#3dadb2">Workshop</h1> -->
+
+    <div class="row">
+      <div class="col-sm-12" style="text-align: left; ">
+        <div style="font-size: 2.5em; color: #333; line-height: 1em;">{{ site.conference.name }}</div>
+        <div  style="font-size: 1.5em; color: #333">Dates: {{ site.conference.dates.first | date: "%d" }} {{ site.conference.dates.first | date: "%B" }} - {{ site.conference.dates.last | date: "%d" }} {{ site.conference.dates.first | date: "%B" }} {{ site.conference.dates.last | date: "%Y" }}</div>
+        <div style="font-size: 1.5em; color: #333">Venue: {{ site.conference.location }}
+        </div>
+	{% for role in site.conference.roles %}
+        <div style="font-size: 1.25em; color: #333"><b>{{ role.type }}</b>: <a href="{{ role.url }}">{{ role.name }}</a> <a href="mailto:{{ role.email }}">{{ role.email }}</a>
+        </div>
+	{% endfor %}
+	{% if site.conference.registration.open %}
+        <div style="padding: 20px 0px">
+          <h4 style="margin-bottom: 5px;">Important Dates</h4>
+          <p> {{ site.conference.registration.abstract | date: "%d %B %Y" }}: Abstract Submission Deadline</p>
+          <p> {{ site.conference.registration.deadline | date: "%d %B %Y" }}: Closing Date for Registration</p>
+        </div>
+	{% endif %}
+	{% if site.conference.theme %}
+        <div style="padding: 20px 0px">
+          <h4 style="margin-bottom: 5px;">Theme</h4>
+	  {{ site.conference.theme }}
+        </div>
+	{% endif %}
+        <div style="padding: 20px 0px">
+          <h4 style="margin-bottom: 5px;">Call for Registration</h4>
+	  {% if site.registration.open %}
+          <p> We welcome participants working in any field related to
+            data science in Africa. This includes data science
+            researchers from academia or industry, statisticians and
+            data analysts interested in new forms of digital data and
+            methodologies, and people working on issues related to the
+            Global Goals who are interested in the ways that big data
+            and data science can have an impact in their field.
+          </p>
+	  {% endif %}
+          <p>The workshop will be organized around paper presentations and interactive panel discussions. We invite participants interested in presenting work at the workshop to submit a short abstract describing the application of data science methods to problems relevant to Africa. These may include, for example, the following areas:
+<ul>
+<li>Data Science for the Sustainable Development Goals
+</li>
+<li>Healthcare
+</li>
+<li>Agriculture
+</li>
+<li>Wildlife conservation
+</li>
+<li>Disaster response</li>
+<li>Geospatial modelling</li>
+<li>Telecommunications data modelling</li>
+<li>Economic monitoring</li></ul>
+</p>
+<p>During the panel discussions, we will unite a wide range of stakeholders, including data scientists, representatives from government, development practitioners and the private sector; this will provide a unique setting in which innovative solution driven ideas can thrive.</p>
+
+	  <p>Participants will also develop a <b>framework for attracting</b> young African talent, mentors and researchers from academia, the public sector and the private sector in Africa to engage in activities geared towards harnessing big data and real-time analytics for the public good.
+	  </p>
+
+	  <h4 style="margin-top: 20px">Workshop programme outline:</h4>
+
+	  {% include workshop_program.html %}
+
+
+	{% if site.conference.registration.open %}
+	{% if site.conference.googleformid %}
+	<div><a class="btn btn-default btn-lg" data-toggle="modal" href="http://goo.gl/forms/{{ site.conference.googleformid }}" style="float:center; ">Register for Workshop</a></div>
+	{% endif %}
+	{% else %}
+	<p><i>The workshop is now fully subscribed, and registration has closed.</i></p>
+
+	{% endif %}
+
+        
+	
+      </div>
+    </div>
+  </div>
+</div>

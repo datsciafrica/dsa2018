@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+{% include bootstrap_js_code.html %}
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.banner }}') no-repeat; background-size: cover;">
+  <div class="banner container-fluid">
+    {% if site.previous.url %}
+    <a href="{{ site.previous.url }}" style="
+										 display: block;
+										 text-decoration: none;
+										 ">
+      <div class="col-sm-offset-8 col-sm-4" style="
+						   
+						   
+						   /*background-color: #999;*/
+						   /*background-color: #369b9f;*/
+						   background-color: #fefefe;
+
+						   /*border-radius: 5px;
+						   box-shadow: 0px 0px 3px 2px #777;*/
+						   padding: 20px;
+						   margin-top: 20px;
+						   /*color: #ffffff; */
+						   color: #444; 
+						   /*border: 1px solid #ccc;*/
+						   border-top: 4px solid #3dadb2; 
+						   border-bottom: 2px solid grey;
+						   opacity: 0.8; 
+						   /*text-shadow: 1px 1px 3px #333;*/
+						   ">
+        {{ site.previous.text }}
+      </div>
+    </a>
+  {% endif %}
+  </div>
+  <div class="hero-content">
+    <div class="container-fluid">
+      <div class="">
+        <h1 style="color:#000">{{ site.conference.name }}</h1>
+        <p>{{ site.conference.location }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid" style="height:500px;" >
+
+    <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form" style="background-color:transparent;">
+      <h3></h3>
+
+    </div>
+
+  </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start events -->
+<div id="events" class="events about" style="
+					     background-color: #efefef;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+	{{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End events -->
+
+<!-- Start Audience -->
+{% include school.html %}
+<!-- End Audience -->
+
+<!-- Start Audience -->
+{% include workshop.html %}
+<!-- End Audience -->
+
+
+
+<!-- Start Audience -->
+{% include sponsors.html %}
+<!-- End Audience -->
+
+<!-- Start Audience -->
+<!--div id="social_event" class="about" style="background-color: #efefef; text-align: center; ">
+    <div class="container-fluid">
+      <h2 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">Social Event</h2>
+      <p>The social event is for promoting networking among members. This time the event is organised at a Chimpanzee sanctuary on an Island in Lake Victoria. For more information</p>
+
+      <a class="btn btn-primary btn-lg" style="background-color: #3dadb2; border-color: #3dadb2"  href="{{site.baseurl}}/ngamba_island.pdf">Download</a>
+    </div>
+</div-->
+<!-- End Audience -->
+

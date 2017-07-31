@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ site.conference.shortname }} Workshop</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap-table/src/bootstrap-table.css">
+    <script src="../assets/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-table/src/bootstrap-table.js"></script>
+    <style type="text/css"> 
+    .header {
+    min-height:180px;
+    margin-bottom:20px;
+    }
+    body {
+        height:100%;
+    }
+    .vert {
+  vertical-align: middle;
+  width:100%;
+  padding-top:4%;
+}
+    </style>
+</head>
+<body>
+<!-- Start Header -->
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand scroll" href="#top"><img src="../assets/logo.png" alt="DSA 2016" style="height: 70px; margin-top-top: 5px;"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="scroll" href="../">HOME</a></li>
+                <li><a class="scroll" href="#summer_school">SUMMER SCHOOL</a></li>
+                <li><a class="scroll" href="../">WORKSHOP</a></li>
+                <li><a class="scroll" href="../">COLLABORATORS &amp; SPONSORSHIP</a></li>
+                <!-- <li><a class="scroll" href="#testimonials">TRAVEL</a></li> -->
+                <li><a class="scroll" href="../">SOCIAL EVENT</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Header -->
+{{ content }}
+
+</body>
+</html>
