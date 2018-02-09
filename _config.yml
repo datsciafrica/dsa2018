@@ -3,7 +3,7 @@ title: Data Science Africa
 location: Nyeri, Kenya
 year: 2018
 email: info@datascienceafrica.org
-banner: 
+banner: kenya.jpg
 description: > # this means to ignore newlines until "baseurl:"
   The 2018 Data Science Africa summer school held at Dedan Kemathi
   University of Technology.
@@ -43,6 +43,7 @@ school:
     open: False
   draft: Y # set to Y if the programme is draft only.
   roles:
+  - {type: Organizer, name: Ciira Maina, url: "https://sites.google.com/site/cwamainadekut"}  
   - {type: Organizer, name: Ernest Mwebaze, url: "http://air.ug/~emwebaze"}
   - {type: Organizer, name: Mubangizi Martin Gordon, url: "http://air.ug/~mmubangizi"}
   - {type: Organizer, name: John Quinn, url: "http://air.ug/~jquinn"}
