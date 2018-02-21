@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-sm-12" style="text-align: left; ">
         <div style="font-size: 2.5em; color: #333; line-height: 1em;">{{ site.conference.name }}</div>
-        <div  style="font-size: 1.5em; color: #333">Dates: {{ site.conference.dates.first | date: "%d" }} {{ site.conference.dates.first | date: "%B" }} - {{ site.conference.dates.last | date: "%d" }} {{ site.conference.dates.first | date: "%B" }} {{ site.conference.dates.last | date: "%Y" }}</div>
+        <div  style="font-size: 1.5em; color: #333">Dates: {{ site.conference.dates.first | date: "%d" }} {{ site.conference.dates.first | date: "%B" }} - {{ site.conference.dates.last | date: "%d" }} {{ site.conference.dates.last | date: "%B" }} {{ site.conference.dates.last | date: "%Y" }}</div>
         <div style="font-size: 1.5em; color: #333">Venue: {{ site.conference.location }}
         </div>
 	{% for role in site.conference.roles %}
