@@ -57,7 +57,7 @@ conference:
   hosts:
   roles:
   - {type: General Chair, name: Ciira Maina, url: "https://sites.google.com/site/cwamainadekut/", email: "ciira.maina@dkut.ac.ke"}
-  - {type: General Chair, name: Ernest Mwebaze, url: "http://air.ug/~emwebaze",email: ""}
+  - {type: Program Chair, name: Ernest Mwebaze, url: "http://air.ug/~emwebaze",email: "emwebaze@cit.ac.ug"}
   name: Data Science in Africa Workshop 
   location: Dedan Kemathi University of Technology, Nyeri, Kenya
   googleformid: 
