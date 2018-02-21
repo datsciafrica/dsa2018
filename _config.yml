@@ -32,14 +32,17 @@ social:
 school:  
   name: Data Science in Africa School
   shortname: DSA2018
-  location: "Nelson Mandela African Institute of Science and Technology, Tanzania"
+  location: "Dedan Kimathi University of Technology, Nyeri, Kenya"
   googleformid: 
-  dates:		
+  dates:
+  - 2018-05-31
+  - 2018-06-01
+  - 2018-06-02		
   - 2018-06-04
   - 2018-06-05
   - 2018-06-06
   registration:
-    deadline: 2018-05-11
+    deadline: 2018-04-11
     open: False
   draft: Y # set to Y if the programme is draft only.
   roles:
@@ -61,13 +64,13 @@ conference:
   year: 2018
   month: June
   registration:
-    deadline: 2018-05-11
+    deadline: 2018-04-11
     open: False
   # add other days here for them to appear
     abstract: 
   dates:	
-  - 2018-06-07
-  - 2018-07-08
+  - 2018-04-01
+  - 2018-04-15
   draft: Y # set to Y if the programme is draft only.
   organizers:
   - {logo: AI.png, name: "AI Research, Makerere University"}
@@ -83,7 +86,7 @@ conference:
   - {logo: ARM-RGB-2015.png, name: "ARM", url: "https://www.arm.com/"}
   - {logo: ARMmbedLogo2-1170x316.png, name: "ARM mbed", url: "https://www.mbed.com/en/"}
   silversponsors:
-  - {logo: twas.png, name: "The World Academy of Sciences (TWAS)", url: "http://twas.org/"}
+  #- {logo: twas.png, name: "The World Academy of Sciences (TWAS)", url: "http://twas.org/"}
   
 feedback: 
 
