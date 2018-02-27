@@ -59,7 +59,7 @@ conference:
   - {type: General Chair, name: Ciira Maina, url: "https://sites.google.com/site/cwamainadekut/", email: "ciira.maina@dkut.ac.ke"}
   - {type: Program Chair, name: Ernest Mwebaze, url: "http://air.ug/~emwebaze",email: "emwebaze@cit.ac.ug"}
   name: Data Science in Africa Workshop 
-  location: Dedan Kemathi University of Technology, Nyeri, Kenya
+  location: Dedan Kimathi University of Technology, Nyeri, Kenya
   googleformid: 
   year: 2018
   month: June
@@ -73,11 +73,11 @@ conference:
   - 2018-06-08
   draft: Y # set to Y if the programme is draft only.
   organizers:
-  - {logo: AI.png, name: "AI Research, Makerere University"}
+  #- {logo: AI.png, name: "AI Research, Makerere University"}
   - {logo: sheffield.png, name: University of Sheffield}
   - {logo: makerere.png, name: Makerere University}
   - {logo: plklogo.png, name: Pulse Lab Kampala}
-  - {logo: un_uganda1.png, name: United Nations Uganda}
+  #- {logo: un_uganda1.png, name: United Nations Uganda}
   - {logo: dedan_kimathi.png, name: Dedan Kimathi University of Technology}
   - {logo: nmaist-logo.png, name: Nelson Mandela African Institute of Science and Technology}
   goldsponsors: 
@@ -86,7 +86,7 @@ conference:
   - {logo: ARM-RGB-2015.png, name: "ARM", url: "https://www.arm.com/"}
   - {logo: ARMmbedLogo2-1170x316.png, name: "ARM mbed", url: "https://www.mbed.com/en/"}
   silversponsors:
-  #- {logo: twas.png, name: "The World Academy of Sciences (TWAS)", url: "http://twas.org/"}
+  - {logo: DeepMind.png, name: "DeepMind", url: "https://deepmind.com/"}
   
 feedback: 
 
