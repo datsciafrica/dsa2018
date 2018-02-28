@@ -5,7 +5,7 @@ year: 2018
 email: info@datascienceafrica.org
 banner: kenya2.jpg
 description: > # this means to ignore newlines until "baseurl:"
-  The 2018 Data Science Africa summer school held at Dedan Kemathi
+  The 2018 Data Science Africa summer school held at Dedan Kimathi
   University of Technology.
 baseurl: "/dsa2018" # the subpath of your site, e.g. /blog/
 url: "http://www.datascienceafrica.org" # the base hostname & protocol for your site
