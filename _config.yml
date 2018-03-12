@@ -87,6 +87,7 @@ conference:
   - {logo: ARMmbedLogo2-1170x316.png, name: "ARM mbed", url: "https://www.mbed.com/en/"}
   silversponsors:
   - {logo: DeepMind.png, name: "DeepMind", url: "https://deepmind.com/"}
+  - {logo: Google.png, name: "Google", url: "https://www.google.com/"}
   
 feedback: 
 
