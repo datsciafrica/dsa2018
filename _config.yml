@@ -82,9 +82,10 @@ conference:
   - {logo: nmaist-logo.png, name: Nelson Mandela African Institute of Science and Technology}
   goldsponsors: 
   #- {logo: facebook.png, name: "Facebook"}  
-  #- {logo: google.png, name: "Google"}
+  #- {logo: Amazon-logo-RGB.png, name: "Amazon"}
   - {logo: ARM-RGB-2015.png, name: "ARM", url: "https://www.arm.com/"}
   - {logo: ARMmbedLogo2-1170x316.png, name: "ARM mbed", url: "https://www.mbed.com/en/"}
+  - {logo: Amazon-logo-RGB.png, name: "Amazon", url: "https://www.amazon.com/"}
   silversponsors:
   - {logo: DeepMind.png, name: "DeepMind", url: "https://deepmind.com/"}
   - {logo: Google.png, name: "Google", url: "https://www.google.com/"}
