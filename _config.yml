@@ -67,7 +67,7 @@ conference:
     deadline: 2018-04-31
     open: True
   # add other days here for them to appear
-    abstract: 
+    abstract: 2018-04-31
   dates:	
   - 2018-06-07
   - 2018-06-08
