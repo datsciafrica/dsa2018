@@ -1,6 +1,7 @@
 # Site settings
 title: Data Science Africa
 location: Nyeri, Kenya
+city: Nyeri
 year: 2018
 email: info@datascienceafrica.org
 banner: kenya2.jpg
@@ -12,6 +13,17 @@ url: "http://www.datascienceafrica.org" # the base hostname & protocol for your 
 twitter_username: datsciAfrica
 logo_url: img/logo.png
 github_username:  datsciafrica
+
+other:
+  url: /dsa2018abuja/
+  text: |
+    <div class="" style="
+                        font-weight: bold; 
+                        font-size: 18px;
+
+                        ">Nigeria: Data Science Africa 2018</div>
+    <div>November 12<sup>th</sup>  - November 16<sup>th</sup> 2018</div>
+    <div>Abuja, Nigeria</div>
 
 previous:
   url: /dsa2017/

@@ -9,7 +9,8 @@
     <div class="row">
       {% for organizer in site.conference.organizers %}
       
-      <div class="col-sm-6 col-md-3">
+      <!-- <div class="col-sm-6 col-md-3"> -->
+      <div class="logo-box">
         <div class="icon-box" style="position: relative; min-height: 80px;">
           <!-- <span class="helper"></span> -->
           <img class="v-align" style="" src="{{ site.baseurl }}/img/{{ organizer.logo }}">
@@ -22,7 +23,8 @@
     <div class="row">
       {% for sponsor in site.conference.goldsponsors %}
       
-      <div class="col-sm-6 col-md-3">
+      <!-- <div class="col-sm-6 col-md-3"> -->
+      <div class="logo-box">
         <div class="icon-box" style="position: relative; min-height: 80px;">
           <!-- <span class="helper"></span> -->
           <a href="{{sponsor.url}}">		
@@ -36,7 +38,8 @@
     <div class="row">
       {% for sponsor in site.conference.silversponsors %}
       
-      <div class="col-sm-6 col-md-3">
+      <!-- <div class="col-sm-6 col-md-3"> -->
+      <div class="logo-box">
         <div class="icon-box" style="position: relative; min-height: 80px;">
           <!-- <span class="helper"></span> -->
           <a href="{{sponsor.url}}">		

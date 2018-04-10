@@ -6,6 +6,30 @@ layout: default
 {% capture banner_title %}{{ site.title }} {{ site.year }}{% endcapture %}
 {% capture banner %}{{ site.baseurl }}/img/{{ site.banner }}{% endcapture %}
 {% capture notice %}{% if site.previous.url %}
+<a href="{{ site.other.url }}" style="
+					 display: block;
+					 text-decoration: none;
+					 ">
+  <div class="col-sm-offset-8 col-sm-4" style="
+					       /*background-color: #999;*/
+					       /*background-color: #369b9f;*/
+					       background-color: #fefefe;
+					       
+					       /*border-radius: 5px;
+					       box-shadow: 0px 0px 3px 2px #777;*/
+					       padding: 20px;
+					       margin-top: 20px;
+					       /*color: #ffffff; */
+					       color: #444; 
+					       /*border: 1px solid #ccc;*/
+					       border-top: 4px solid #3dadb2; 
+					       border-bottom: 2px solid grey;
+					       opacity: 0.8; 
+					       /*text-shadow: 1px 1px 3px #333;*/
+					       ">
+    {{ site.other.text }}
+  </div>
+</a>
 <a href="{{ site.previous.url }}" style="
 					 display: block;
 					 text-decoration: none;
