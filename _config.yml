@@ -101,6 +101,7 @@ conference:
   silversponsors:
   - {logo: DeepMind.png, name: "DeepMind", url: "https://deepmind.com/"}
   - {logo: Google.png, name: "Google", url: "https://www.google.com/"}
+  - {logo: Voyage.png, name: "Voyage", url: "https://www.voyage.auto/"}
   
 feedback: 
 
