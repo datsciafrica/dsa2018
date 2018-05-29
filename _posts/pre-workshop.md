@@ -21,6 +21,6 @@ To ensure that the software is working fine on your machine and to get you up an
 
 #### Troubleshooting and comments..
 
-Use the comment section below to (a) ask questions that are not already answered (b) help your peers by providing answers to their questions, if you can. 
+Use the comment section below to (a) ask questions that are not already answered (b) help your peers by providing answers to their questions, if you can.
 
 {% include disqus.html %}
