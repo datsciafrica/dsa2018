@@ -1,21 +1,20 @@
 ---
 layout: school
-title: Pre-workshop
+title: Pre-School
 active: False
 video: False
 day: 0
 comments: true
 ---
 
-# Configure a DSA Environment with [Anaconda](http://conda.pydata.org/docs)
-
+Configure a DSA Environment with [Anaconda](http://conda.pydata.org/docs)
 
 > Conda is an open source package management system and environment management system
 for installing multiple versions of software packages and their dependencies and
 switching easily between them. It works on Linux, OS X and Windows, and was created
 for Python programs but can package and distribute any software.
 
-## Overview
+### Overview
 Using Anaconda consists of the following:
 
 1. Install [`miniconda`](http://conda.pydata.org/miniconda.html) on your computer
@@ -24,7 +23,7 @@ Using Anaconda consists of the following:
 
 ---
 
-## Installation
+### Installation
 
 **Download** the latest version of `miniconda` that matches your system.
 
