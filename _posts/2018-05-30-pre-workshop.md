@@ -1,21 +1,21 @@
 ---
 layout: school
 title: Pre-workshop
-active: True
+active: False
 video: False
 day: 0
 comments: true
 ---
 
-# Configure a DSA Environment with [Anaconda](http://conda.pydata.org/docs)
+### Configure a DSA Environment with [Anaconda](http://conda.pydata.org/docs)
 
 
-> Conda is an open source package management system and environment management system 
+Conda is an open source package management system and environment management system 
 for installing multiple versions of software packages and their dependencies and 
 switching easily between them. It works on Linux, OS X and Windows, and was created 
 for Python programs but can package and distribute any software.
 
-## Overview
+#### Overview
 Using Anaconda consists of the following:
 
 1. Install [`miniconda`](http://conda.pydata.org/miniconda.html) on your computer
@@ -24,7 +24,7 @@ Using Anaconda consists of the following:
 
 ---
 
-## Installation
+#### Installation
 
 **Download** the latest version of `miniconda` that matches your system.
 
@@ -69,7 +69,7 @@ conda info --envs
 conda clean -tp
 ```
 
-### Uninstalling 
+#### Uninstalling 
 
 To uninstall the environment:
 
@@ -78,6 +78,31 @@ conda env remove -n dsa2018
 ```
 
 ---
+
+#### Using Anaconda
+
+Now that you have created an environment, in order to use it, you will need to activate the environment. This must be done **each** time you begin a new working session i.e. open a new terminal window. 
+
+**Activate** the `dsa2018` environment:
+
+#### OS X and Linux
+```sh
+$ source activate dsa2018
+```
+#### Windows
+Depending on shell either:
+```sh
+$ source activate dsa2018
+```
+or
+
+```sh
+$ activate dsa2018
+```
+
+That's it. Now you can fire up your Jupyter Notebook from this terminal and it will load all the necessary libraries.
+
+To exit the environment when you have completed your work session, simply close the terminal window.
 
 #### Troubleshooting and comments..
 
