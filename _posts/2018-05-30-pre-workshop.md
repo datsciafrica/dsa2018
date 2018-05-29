@@ -1,7 +1,7 @@
 ---
 layout: school
 title: Pre-workshop
-active: True
+active: False
 video: False
 day: 0
 comments: true
@@ -10,9 +10,9 @@ comments: true
 # Configure a DSA Environment with [Anaconda](http://conda.pydata.org/docs)
 
 
-> Conda is an open source package management system and environment management system 
-for installing multiple versions of software packages and their dependencies and 
-switching easily between them. It works on Linux, OS X and Windows, and was created 
+> Conda is an open source package management system and environment management system
+for installing multiple versions of software packages and their dependencies and
+switching easily between them. It works on Linux, OS X and Windows, and was created
 for Python programs but can package and distribute any software.
 
 ## Overview
@@ -28,7 +28,7 @@ Using Anaconda consists of the following:
 
 **Download** the latest version of `miniconda` that matches your system.
 
-|        | Linux | Mac | Windows | 
+|        | Linux | Mac | Windows |
 |--------|-------|-----|---------|
 | 64-bit | [64-bit (bash installer)][lin64] | [64-bit (bash installer)][mac64] | [64-bit (exe installer)][win64]
 | 32-bit | [32-bit (bash installer)][lin32] |  | [32-bit (exe installer)][win32]
@@ -45,7 +45,7 @@ Using Anaconda consists of the following:
 - **Mac:** http://conda.pydata.org/docs/install/quick.html#os-x-miniconda-install
 - **Windows:** http://conda.pydata.org/docs/install/quick.html#windows-miniconda-install
 
-**Setup** the `dsa2018` environment. 
+**Setup** the `dsa2018` environment.
 
 ```sh
 git clone https://github.com/emwebaze/dsa2018materials.git
@@ -69,7 +69,7 @@ conda info --envs
 conda clean -tp
 ```
 
-### Uninstalling 
+### Uninstalling
 
 To uninstall the environment:
 
@@ -81,6 +81,6 @@ conda env remove -n dsa2018
 
 #### Troubleshooting and comments..
 
-Use the comment section below to (a) ask questions that are not already answered (b) help your peers by providing answers to their questions, if you can. 
+Use the comment section below to (a) ask questions that are not already answered (b) help your peers by providing answers to their questions, if you can.
 
 {% include disqus.html %}
