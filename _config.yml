@@ -56,7 +56,7 @@ school:
   registration:
     deadline: 2018-04-11
     open: False
-  draft: Y # set to Y if the programme is draft only.
+  draft: N # set to Y if the programme is draft only.
   roles:
   - {type: Organizer, name: Ciira Maina, url: "https://sites.google.com/site/cwamainadekut"}  
   - {type: Organizer, name: Ernest Mwebaze, url: "http://air.ug/~emwebaze"}
@@ -77,7 +77,7 @@ conference:
   month: June
   registration:
     deadline: 2018-04-31
-    open: True
+    open: False
   # add other days here for them to appear
     abstract: 2018-04-31
   dates:	
