@@ -1,0 +1,48 @@
+{
+    "settings" : {
+        "number_of_shards" : 1
+    },
+    "mappings": {
+      "type1": {
+        "properties": {
+          "analog_in_4" : { "type": "float"  },
+          "relative_humidity_3":    { "type": "float"  },
+          "temperature_2":     { "type": "float"  },
+          "app_id":      { "type": "text" },
+          "dev_id":    { "type": "text"  },
+          "hardware_serial":     { "type": "text"  },
+          "port":      { "type": "integer" },
+          "counter":      { "type": "integer" },
+          "payload_raw":      { "type": "text" },
+          "frequency":      { "type": "float" },
+          "modulation":      { "type": "text" },
+          "data_rate":      { "type": "text" },
+          "coding_rate":      { "type": "text" },
+          "airtime":      { "type": "integer" },
+          "time":  { "type":   "date", "format": "strict_date_optional_time" },
+          "gtw_id_0":      { "type": "text" },
+          "gtw_trusted_0":      { "type": "text" },
+          "gtw_time_0":       { "type":   "text" },
+          "channel_0":      { "type": "integer" },
+          "rssi_0":      { "type": "text" },
+          "snr_0":      { "type": "text" },
+          "rf_chain_0":      { "type": "text" },
+          "latitute_0":      { "type": "text" },
+          "longitude_0":      { "type": "text" },
+          "gtw_location_0": { "type": "geo_point" },
+          "location_source_0":      { "type": "text" },
+          "gtw_id_1":      { "type": "text" },
+          "gtw_trusted_1":      { "type": "text" },
+          "gtw_time_1":       { "type":   "text"},
+          "channel_1":      { "type": "integer" },
+          "rssi_1":      { "type": "text" },
+          "snr_1":      { "type": "text" },
+          "rf_chain_1":      { "type": "text" },
+          "latitute_1":      { "type": "text" },
+          "longitude_1":      { "type": "text" },
+          "gtw_location_1": { "type": "geo_point" },
+          "location_source_1":      { "type": "text" }
+        }
+      }
+    }
+}
